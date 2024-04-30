@@ -1,0 +1,323 @@
+/* VARIABLES */
+$color-main : rgb(25, 25, 112);
+$color-black: rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-degrade: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+$color-validate: rgb(0, 179, 41);
+$color-fail: rgb(138, 0, 0);
+$color-progress: rgb(1, 122, 131);
+$color-no: grayscale(100%);
+
+body {
+    background-color: transparent;
+    font-size: 14px;
+    max-width: 596px;
+    /*border: 1px solid red;*/
+    min-height: 540px;
+}
+
+/* PARTIE SIDEBAR */
+$width-sidebar: 180px;
+
+#kaktus-sidebar {
+    width: $width-sidebar;
+    height: 550px;
+    left: 0.5%;
+    top: 1.5%;
+    position: fixed;
+    border-radius: 10%;
+
+    img {
+        height: 300px;
+        width: $width-sidebar;
+        border-radius: 10%;
+        border: solid 2px $color-black;
+        margin-bottom: 15px;
+        -webkit-transition: 2s; /* Safari 3.1 to 6.0 */
+        transition: 2s;
+
+        &:hover {
+            -webkit-transition: 2s; 
+            transition: 2s;
+            -ms-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg); 
+            transform: rotate(360deg);
+            -webkit-filter: grayscale(100%);filter: grayscale(100%);
+            -webkit-transition: 2s;
+            transition: 2s;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+
+        .blc-onglets {
+            width: $width-sidebar;
+
+            a {
+                color: $color-main;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-black;
+                }
+            }
+
+            span {
+                font-size:11px;
+                text-transform: uppercase;
+
+            }
+
+            .pills-link {
+                display: block;
+                width: 170px;
+                padding: 4px 10px;
+                border: solid 1px $color-black;
+                border-radius: 20px;
+                margin: 3.4% auto;
+                letter-spacing: 3px;
+            }
+
+            .active {
+                color: #fff !important;
+                background-color: $color-main;
+            }
+
+            .fas, .far {
+                margin-right:7px;
+                margin-left:1px;
+                font-size:12px;
+            }
+            .fab {
+                margin-right:10px;
+                margin-left:1px;
+                font-size:14px;
+            }
+            .fa-hiking {
+                margin-right:10px;
+            }
+            
+        }
+    }
+}
+/* DEBUT GENERAL DES CONTENUS */
+.content-tc {
+    position: absolute;
+    left: 185px;
+    width: 415px;
+    padding: 8px 5px 5px 5px;
+
+    .title-bloc {
+        justify-content: center;
+        width: 380px;
+        font-size: 15px;
+        color: white;
+        font-family: "Neucha", cursive;
+        letter-spacing: 10px;
+        text-align: center;
+        background-image: $color-degrade;
+        border-radius: 10px;
+        padding-top: 3px;
+        margin: 15px auto;
+    }
+
+    .title-bloc2 {
+        justify-content: center;
+        width: 380px;
+        font-size: 15px;
+        color: white;
+        font-family: "Neucha", cursive;
+        letter-spacing: 10px;
+        text-align: center;
+        background-image: $color-degrade;
+        border-radius: 10px;
+        padding-top: 3px;
+        margin: 2px auto 15px;
+    }
+
+ /* FIN DE LA PARTIE GENERALE DES CONTENUS */
+
+    /* DEBUT DE LA PARTIE CONCERNANT LES INFORMATIONS GENERALES SUR LE PERSONNAGE */
+
+    .perso-ident {
+        justify-content: center;
+        width: 380px;
+        font-size: 15px;
+        color: white;
+        font-family: "Neucha", cursive;
+        letter-spacing: 10px;
+        text-align: center;
+        background-image: $color-degrade;
+        border-radius: 10px;
+        padding-top: 3px;
+        margin: 23px auto;
+    }
+
+    .blocdescri {
+        width: 380px;
+        margin: 15px auto;
+        background-clip: border-box;
+        padding: 2px 0 1px;
+
+        .descri-corps {
+            flex: 1 1 auto;
+            height: 285px;
+            overflow: auto;
+            padding: 5px 10px 5px 5px;
+            font-size:11px;
+            text-align: justify;
+            border-radius: 10px;
+            border: 1px solid $color-black;
+
+            .titre {
+                color: darkblue;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            .perso-ava {
+                text-align:right;
+                font-size:9px;
+                margin-top: -5px;
+            }
+        }
+    }
+    
+    .bloc-card {
+        display: flex;
+        width: 380px;
+        margin: 5px auto 15px;
+        justify-content: space-between;
+
+        .infos {
+            width: 145px;
+            border-radius: 10px;
+            border: 1px solid $color-black;
+            padding: 5px;
+            font-size:11px;
+            text-align: justify;
+            height: 122px;
+            overflow: auto;
+
+            a {
+                padding: 30px;
+            }
+
+            hr {
+                margin-top: 8px;
+                margin-bottom: 8px;
+                border-color: $color-main;
+            }
+
+            p {
+                margin: 0;
+                font-style: italic;
+            }
+
+            a {
+                color: $color-main;
+
+                &:hover, &:focus {
+                    text-decoration: none;
+                    color: lightpink;
+                }
+            }
+        }
+
+        .img-card {
+            width: 225px;
+
+            img{
+                border-radius: 10px;
+                border: 1px solid $color-black;
+            }
+        }
+    }
+    /* FIN DE LA PARTIE CONCERNANT LA PENSION */
+
+    /* DEBUT PARTIE ELEVAGE */
+    .pension {
+        height: 440px;
+        overflow: auto;
+    }
+    /* FIN PARTIE ELEVAGE */
+
+    /* DEBUT PARTIE REPRODUCTION */
+    .repro {
+        display: flex;
+        width: 380px;
+        margin: 0 auto 6px;
+        justify-content: space-between;
+        padding: 2px 0;
+
+        .sprite {
+            border-radius: 5px;
+            border: solid 1px $color-black;
+            width: 100px;
+            justify-content: center;
+
+            img {
+                margin: auto;
+                align-items: center;
+                display: flex;
+            }
+
+            &:hover {
+                -webkit-filter: grayscale(100%);filter: grayscale(100%);
+                -webkit-transition: 1s;
+                transition: 1s;
+            }
+        }
+
+        .repro-infos {
+            height: 102px;
+            width: 270px;
+            overflow: auto;
+            border-radius: 5px;
+            border: solid 1px $color-black;
+            padding: 5px 10px;
+            font-size: 11px;
+
+            span {
+                color: #2890ac;
+            }
+        }
+    }
+
+    .item-repro {
+        display: flex;
+        width: 380px;
+        height: 95px;
+        overflow: auto;
+        margin: 10px auto;
+        border-radius: 10px;
+        border: solid 1px $color-black;
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .list-repro {
+        width: 380px;
+        height: 217px;
+        overflow: auto;
+        margin: 10px auto;
+        border-radius: 10px;
+        border: solid 1px $color-black;
+        padding: 5px 10px;
+        font-size: 11px;
+
+        .titre {
+            color: darkblue;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 4px;
+        }
+    }
+
+    /* FIN PARTIE REPRODUCTION */
+
+    /* DEBUT PARTIE CLIENTS */
+    /* FIN PARTIE CLIENTS */
+}

@@ -1,0 +1,265 @@
+/* VARIABLES */
+body {
+  background-color: transparent;
+  font-size: 14px;
+  max-width: 596px;
+  /*border: 1px solid red;*/
+  min-height: 540px;
+}
+
+/* PARTIE SIDEBAR */
+#kaktus-sidebar {
+  width: 180px;
+  height: 550px;
+  left: 0.5%;
+  top: 1.5%;
+  position: fixed;
+  border-radius: 10%;
+}
+#kaktus-sidebar img {
+  height: 300px;
+  width: 180px;
+  border-radius: 10%;
+  border: solid 2px rgb(0, 0, 0);
+  margin-bottom: 15px; /* Safari 3.1 to 6.0 */
+  transition: 2s;
+}
+#kaktus-sidebar img:hover {
+  transition: 2s;
+  transform: rotate(360deg);
+  filter: grayscale(100%);
+  transition: 2s;
+}
+#kaktus-sidebar .navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+#kaktus-sidebar .navigation .blc-onglets {
+  width: 180px;
+}
+#kaktus-sidebar .navigation .blc-onglets a {
+  color: rgb(25, 25, 112);
+  text-decoration: none;
+}
+#kaktus-sidebar .navigation .blc-onglets a:hover {
+  color: rgb(0, 0, 0);
+}
+#kaktus-sidebar .navigation .blc-onglets span {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+#kaktus-sidebar .navigation .blc-onglets .pills-link {
+  display: block;
+  width: 170px;
+  padding: 4px 10px;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 20px;
+  margin: 3.4% auto;
+  letter-spacing: 3px;
+}
+#kaktus-sidebar .navigation .blc-onglets .active {
+  color: #fff !important;
+  background-color: rgb(25, 25, 112);
+}
+#kaktus-sidebar .navigation .blc-onglets .fas, #kaktus-sidebar .navigation .blc-onglets .far {
+  margin-right: 7px;
+  margin-left: 1px;
+  font-size: 12px;
+}
+#kaktus-sidebar .navigation .blc-onglets .fab {
+  margin-right: 10px;
+  margin-left: 1px;
+  font-size: 14px;
+}
+#kaktus-sidebar .navigation .blc-onglets .fa-hiking {
+  margin-right: 10px;
+}
+
+/* DEBUT GENERAL DES CONTENUS */
+.content-tc {
+  position: absolute;
+  left: 185px;
+  width: 415px;
+  padding: 8px 5px 5px 5px;
+  /* FIN DE LA PARTIE GENERALE DES CONTENUS */
+  /* DEBUT DE LA PARTIE CONCERNANT LES INFORMATIONS GENERALES SUR LE PERSONNAGE */
+  /* FIN DE LA PARTIE CONCERNANT LA PENSION */
+  /* DEBUT PARTIE ELEVAGE */
+  /* FIN PARTIE ELEVAGE */
+  /* DEBUT PARTIE REPRODUCTION */
+  /* FIN PARTIE REPRODUCTION */
+  /* DEBUT PARTIE CLIENTS */
+  /* FIN PARTIE CLIENTS */
+}
+.content-tc .title-bloc {
+  justify-content: center;
+  width: 380px;
+  font-size: 15px;
+  color: white;
+  font-family: "Neucha", cursive;
+  letter-spacing: 10px;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  border-radius: 10px;
+  padding-top: 3px;
+  margin: 15px auto;
+}
+.content-tc .title-bloc2 {
+  justify-content: center;
+  width: 380px;
+  font-size: 15px;
+  color: white;
+  font-family: "Neucha", cursive;
+  letter-spacing: 10px;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  border-radius: 10px;
+  padding-top: 3px;
+  margin: 2px auto 15px;
+}
+.content-tc .perso-ident {
+  justify-content: center;
+  width: 380px;
+  font-size: 15px;
+  color: white;
+  font-family: "Neucha", cursive;
+  letter-spacing: 10px;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
+  border-radius: 10px;
+  padding-top: 3px;
+  margin: 23px auto;
+}
+.content-tc .blocdescri {
+  width: 380px;
+  margin: 15px auto;
+  background-clip: border-box;
+  padding: 2px 0 1px;
+}
+.content-tc .blocdescri .descri-corps {
+  flex: 1 1 auto;
+  height: 285px;
+  overflow: auto;
+  padding: 5px 10px 5px 5px;
+  font-size: 11px;
+  text-align: justify;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.content-tc .blocdescri .descri-corps .titre {
+  color: darkblue;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.content-tc .blocdescri .descri-corps .perso-ava {
+  text-align: right;
+  font-size: 9px;
+  margin-top: -5px;
+}
+.content-tc .bloc-card {
+  display: flex;
+  width: 380px;
+  margin: 5px auto 15px;
+  justify-content: space-between;
+}
+.content-tc .bloc-card .infos {
+  width: 145px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+  font-size: 11px;
+  text-align: justify;
+  height: 122px;
+  overflow: auto;
+}
+.content-tc .bloc-card .infos a {
+  padding: 30px;
+}
+.content-tc .bloc-card .infos hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-color: rgb(25, 25, 112);
+}
+.content-tc .bloc-card .infos p {
+  margin: 0;
+  font-style: italic;
+}
+.content-tc .bloc-card .infos a {
+  color: rgb(25, 25, 112);
+}
+.content-tc .bloc-card .infos a:hover, .content-tc .bloc-card .infos a:focus {
+  text-decoration: none;
+  color: lightpink;
+}
+.content-tc .bloc-card .img-card {
+  width: 225px;
+}
+.content-tc .bloc-card .img-card img {
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.content-tc .pension {
+  height: 440px;
+  overflow: auto;
+}
+.content-tc .repro {
+  display: flex;
+  width: 380px;
+  margin: 0 auto 6px;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+.content-tc .repro .sprite {
+  border-radius: 5px;
+  border: solid 1px rgb(0, 0, 0);
+  width: 100px;
+  justify-content: center;
+}
+.content-tc .repro .sprite img {
+  margin: auto;
+  align-items: center;
+  display: flex;
+}
+.content-tc .repro .sprite:hover {
+  filter: grayscale(100%);
+  transition: 1s;
+}
+.content-tc .repro .repro-infos {
+  height: 102px;
+  width: 270px;
+  overflow: auto;
+  border-radius: 5px;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 5px 10px;
+  font-size: 11px;
+}
+.content-tc .repro .repro-infos span {
+  color: #2890ac;
+}
+.content-tc .item-repro {
+  display: flex;
+  width: 380px;
+  height: 95px;
+  overflow: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 5px 10px;
+  font-size: 11px;
+}
+.content-tc .list-repro {
+  width: 380px;
+  height: 217px;
+  overflow: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 5px 10px;
+  font-size: 11px;
+}
+.content-tc .list-repro .titre {
+  color: darkblue;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 4px;
+}/*# sourceMappingURL=style.css.map */
