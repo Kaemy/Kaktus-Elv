@@ -36,8 +36,8 @@
                 <strong>Autres types</strong><br>
                   30 pk$ / combats d'Exp.</p><hr>
                   <p><strong>Apprentissage CS</strong><br>
-                    150 pk$ si dépôt en pension.<br>
-                    200 pk$ autrement.</p><hr>
+                  150 pk$ si dépôt en pension.<br>
+                  200 pk$ autrement.</p><hr>
                 <p>
               </div>
               <div class="img-card">
@@ -58,16 +58,41 @@
                   <p class="titre">La Progression.</p>
                   <p>
                     <strong>3</strong> Rubans Cérès → 3 CR possible<br/><br/>
-                    <strong>61</strong> reproductions réussies dont <strong>6</strong> avec encens<br/><br/>
+                    <strong>63</strong> reproductions réussies dont <strong>6</strong> avec encens<br/><br/>
                     <a href="https://master-poke.forumactif.fr/t23113-work-in-progress-forbidden-access#422082">Work in progress, forbidden access.</a> - 100 RPs avec dés d'entrainements<br/>
                     <a href="https://master-poke.forumactif.fr/t24164-changement-de-plans-on-recommence#443485">Changement de plans, on recommence !</a> - 100 dés d'entrainements<br/>
                     <a href="https://master-poke.forumactif.fr/t26038-le-debut-des-travaux#483123">Le début des travaux</a> - 89 dés d'entrainements<br/>
-                    <a href="https://master-poke.forumactif.fr/t26792-kokonuts-au-rapport#499226">Kokonut's, au rapport !</a> - 35 dés d'entrainements<br/>
+                    <a href="https://master-poke.forumactif.fr/t26792-kokonuts-au-rapport#499226">Kokonut's, au rapport !</a> - 37 dés d'entrainements<br/>
                     <a href="">TitreDuRP</a> - XX dés d'entrainements<br/>
-                    Total des entrainements : <strong>324 RPs</strong><br/>
+                    Total des entrainements : <strong>326 RPs</strong><br/>
                   </p><hr>
                   <p><a href="https://i.imgur.com/6FARtuk.png">tcard #1</a> - <a href="https://i.imgur.com/caqbJ3l.png">tcard #2</a> - <a href="https://i.imgur.com/9fwJ8dz.png">tcard #3</a></p>
               </div>
+            </div>
+            <div class="blocdescri">
+              <div class="descri-corps">
+                <form id="xp-calc-form">
+                  <fieldset>
+                    <legend>Réaliser un devis pour un séjour en pension.</legend>
+                    <div class="level-inputs">
+                      <label for="base">Pokémon au lvl. </label>
+                      <input type="number" id="base" name="base" min="5" max="100" placeholder="15" required>
+                      <label for="base-xp">et</label>
+                      <input type="number" id="base-xp" name="base-xp" min="0" max="6" placeholder="0">
+                      
+                      <label for="to">XP, jusqu'au lvl</label>
+                      <input type="number" id="to" name="to" min="5" max="100" placeholder="50" required>
+                      <label for="to-xp">et</label>
+                      <input type="number" id="to-xp" name="to-xp" min="0" max="6" placeholder="0">
+                      <label for="to-xp">XP.</label>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="button-container">
+                  <button type="button" id="devis-button">Valider la demande</button>
+                </div>
+                <div id="resultat"></div> 
+              </div>                        
             </div>
           </div>
           <div class="tab-pane fade" id="v-pills-sac" role="tabpanel" aria-labelledby="v-pills-sac-tab">
@@ -150,6 +175,11 @@
                 Avril | <img src="./img/pokemon/mini/AxolotoS.png"/>Oeuf de <span>Axoloto S</span> | CR Pouvoir Antique & Malédiction & Riposte |<br/>
                 Avril | <img src="./img/pokemon/mini/Zorua.png"/>Oeuf de <span>Zorua</span> | 0 CR  |<br/><br/>
 
+                Mai | <img src="./img/pokemon/mini/Granivol.png"/>Oeuf de <span>Granivol</span> | CR ?? & ??  |<br/>
+                Mai | <img src="./img/pokemon/mini/Granivol.png"/>Oeuf de <span>Granivol</span> | CR ?? & ??  |<br/>
+                Mois | <img src="./img/pokemon/mini/Oeuf.png"/>Oeuf de <span>Pokémon</span> | 0 CR  | Pas d'objet<br/>
+                Mois | <img src="./img/pokemon/mini/Oeuf.png"/>Oeuf de <span>Pokémon</span> | 0 CR  | Pas d'objet<br/>
+                Mois | <img src="./img/pokemon/mini/Oeuf.png"/>Oeuf de <span>Pokémon</span> | 0 CR  | Pas d'objet<br/>
                 Mois | <img src="./img/pokemon/mini/Oeuf.png"/>Oeuf de <span>Pokémon</span> | 0 CR  | Pas d'objet<br/>
               </details>
               <hr>
@@ -587,5 +617,6 @@
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

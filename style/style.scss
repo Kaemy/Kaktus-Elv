@@ -1,5 +1,5 @@
 /* VARIABLES */
-$color-main : rgb(25, 25, 112);
+$color-main : rgb(43, 77, 130);
 $color-black: rgb(0, 0, 0);
 $color-white: rgb(255, 255, 255);
 $color-degrade: linear-gradient(90deg, rgb(43, 77, 130), rgb(40, 144, 172));
@@ -23,7 +23,7 @@ $width-sidebar: 180px;
     width: $width-sidebar;
     height: 550px;
     left: 0.5%;
-    top: 1.5%;
+    top: 11px;
     position: fixed;
     border-radius: 10%;
 
@@ -31,7 +31,7 @@ $width-sidebar: 180px;
         height: 300px;
         width: $width-sidebar;
         border-radius: 10%;
-        border: solid 2px $color-black;
+        border: solid 2px $color-main;
         margin-bottom: 15px;
         -webkit-transition: 2s; /* Safari 3.1 to 6.0 */
         transition: 2s;
@@ -74,7 +74,7 @@ $width-sidebar: 180px;
                 display: block;
                 width: 170px;
                 padding: 4px 10px;
-                border: solid 1px $color-black;
+                border: solid 1px $color-main;
                 border-radius: 20px;
                 margin: 3.4% auto;
                 letter-spacing: 3px;
@@ -152,7 +152,7 @@ $width-sidebar: 180px;
         background-image: $color-degrade;
         border-radius: 10px;
         padding-top: 3px;
-        margin: 23px auto;
+        margin: 10px auto;
     }
 
     .blocdescri {
@@ -163,16 +163,16 @@ $width-sidebar: 180px;
 
         .descri-corps {
             flex: 1 1 auto;
-            height: 285px;
+            height: 141px;
             overflow: auto;
             padding: 5px 10px 5px 5px;
             font-size:11px;
             text-align: justify;
             border-radius: 10px;
-            border: 1px solid $color-black;
+            border: 1px solid $color-main;
 
             .titre {
-                color: darkblue;
+                color: $color-main;
                 text-transform: uppercase;
                 font-size: 14px;
             }
@@ -194,7 +194,7 @@ $width-sidebar: 180px;
         .infos {
             width: 145px;
             border-radius: 10px;
-            border: 1px solid $color-black;
+            border: 1px solid $color-main;
             padding: 5px;
             font-size:11px;
             text-align: justify;
@@ -231,7 +231,7 @@ $width-sidebar: 180px;
 
             img{
                 border-radius: 10px;
-                border: 1px solid $color-black;
+                border: 1px solid $color-main;
             }
         }
     }
@@ -254,7 +254,7 @@ $width-sidebar: 180px;
 
         .sprite {
             border-radius: 5px;
-            border: solid 1px $color-black;
+            border: solid 1px $color-main;
             width: 100px;
             justify-content: center;
 
@@ -276,7 +276,7 @@ $width-sidebar: 180px;
             width: 270px;
             overflow: auto;
             border-radius: 5px;
-            border: solid 1px $color-black;
+            border: solid 1px $color-main;
             padding: 5px 10px;
             font-size: 11px;
 
@@ -293,7 +293,7 @@ $width-sidebar: 180px;
         overflow: auto;
         margin: 10px auto;
         border-radius: 10px;
-        border: solid 1px $color-black;
+        border: solid 1px $color-main;
         padding: 5px 10px;
         font-size: 11px;
     }
@@ -304,12 +304,12 @@ $width-sidebar: 180px;
         overflow: auto;
         margin: 10px auto;
         border-radius: 10px;
-        border: solid 1px $color-black;
+        border: solid 1px $color-main;
         padding: 5px 10px;
         font-size: 11px;
 
         .titre {
-            color: darkblue;
+            color: $color-main;
             text-transform: uppercase;
             font-size: 14px;
             letter-spacing: 4px;
@@ -320,4 +320,52 @@ $width-sidebar: 180px;
 
     /* DEBUT PARTIE CLIENTS */
     /* FIN PARTIE CLIENTS */
+
+    /* DEBUT CALCULATEUR */
+    input {
+        all: unset;
+        width: 15px;
+        border-bottom: 1px solid $color-main;
+        padding: 0px 4px;
+        -moz-appearance: textfield;
+    }
+      
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+      
+    button {
+        all: unset;
+        background-image: $color-degrade;
+        padding: 2px 20px;
+        border-radius: 20px;
+        color: white;
+    }
+      
+    #resultat:not(:empty) {
+        padding: 5px 0 0;
+    }
+      
+    #resultat p {
+        margin: 0;
+    }
+
+    legend {
+        color: $color-main;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .level-inputs {
+        display: inline-flex;
+        gap: 5px;
+        align-items: baseline;
+        width: 360px;
+    }
+      
+    .button-container {
+        text-align: center;
+    }
+
+    /* FIN PARTIE CALCULATEUR */
 }
