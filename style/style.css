@@ -270,7 +270,9 @@ body {
   width: 15px;
   border-bottom: 1px solid rgb(43, 77, 130);
   padding: 0px 4px;
-  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 .content-tc input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;

@@ -327,7 +327,7 @@ $width-sidebar: 180px;
         width: 15px;
         border-bottom: 1px solid $color-main;
         padding: 0px 4px;
-        -moz-appearance: textfield;
+        appearance: textfield;
     }
       
     input[type=number]::-webkit-inner-spin-button {
